@@ -1,12 +1,16 @@
-let str = "Arjun";
-let length = 0;
+/// Finding an Object Class
 
-while (true) {
-  if (str.charAt(length) == "") {
-    break;
-  } else {
-    length++;
+
+function sum(...arguments) {
+  if (arguments.length === 1) {
+    const [fristArr] = arguments
+    if (fristArr instanceof Array) {
+      return sum(...fristArr)
+    }
   }
+  return arguments.reduce((a,b)=> a + b)
 }
-// He is output 5
-console.log(length);
+
+console.log(sum(1))
+console.log(sum([1,2,3,4,5]))
+console.log(sum(4,2))
