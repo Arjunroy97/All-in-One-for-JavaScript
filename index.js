@@ -1,5 +1,4 @@
 
-
 /* finding an Object class */
 
 function sum(...arguments) {
