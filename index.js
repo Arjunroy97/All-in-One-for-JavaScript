@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_a05420
 
 /* finding an Object class */
 
@@ -10,3 +11,5 @@ function sum(...arguments) {
 }
 const result = sum(1, 2, 3, 4);
 // console.log(result)
+=======
+>>>>>>> .merge_file_a08248

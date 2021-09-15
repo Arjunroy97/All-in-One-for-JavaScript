@@ -191,7 +191,8 @@ let anObj = {};
 // console.log(aStr);
 // console.log(aStr.valueOf());
 // console.log(aStr.substring());
-// console.log(aStr === "String");
+// console.log(typeof "ajkj" === "string");
+// console.log(typeof aStr === "string");
 // console.log(anNum === "String");
 // console.log(anObj === "String");
 
@@ -201,16 +202,19 @@ let stringControuctor = new String("I am String");
 // use to function
 
 let isString = function (val) {
-  return val === "String" || val instanceof String;
+  return typeof val === "string" || val instanceof String;
 };
+// console.log(String === "Hello");
+// return false asa kano ji vai
+// ji vai bujagache vai thank vai  ok vai ok vai
 
-// console.log(isString("hello"));// return true;
+console.log(isString("hello")); // return false;
 
-// console.log(isString(aStr));// return true;
+console.log(isString(aStr)); // return true;
 
-// console.log(isString(325));// false;
+// console.log(isString(325)); // false;
 
-// console.log(isString(stringControuctor));// true;
+// console.log(isString(stringControuctor)); // true;
 
 /* String representation of a number */
 
